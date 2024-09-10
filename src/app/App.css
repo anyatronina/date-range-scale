@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(232 232 232);
+}
+
+.mark {
+  display: none;
+}
+
+.markLabel {
+  color: rgb(158 158 158) !important;
+  font-weight: bold !important;
+}
+
+.markLabel:nth-child(24n + 4) {
+  color: rgb(0 0 0) !important;
+}
+
+/* .valueLabel {
+  color: blue !important;
+  background-color: white !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+} */
+
+.root {
+  color: rgb(237 241 248) !important;
+
+  .rail {
+    color: rgb(237 241 248);
+    opacity: 1;
+  }
+
+  .track {
+    background-color: rgb(92 173 234);
+    border: 1px solid currentColor;
+  }
+}
+
+.thumb {
+  box-shadow: none !important;
+
+  .valueLabel {
+    color: rgb(21, 115, 185);
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+}
+
+.thumb {
+  background-color: white;
+  width: 14px;
+  height: 14px;
+  border: 5px solid rgb(92 173 234);
+}
+
+.thumb[data-index="1"] {
+  span {
+    top: 75px;
+  }
+
+  .valueLabel::before {
+    top: -8px;
+  }
+}
+
+.thumb[data-index="0"] {
+  span {
+    top: -16px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(21, 115, 185, 0.4);
+  cursor: pointer;
+  min-width: 100px;
+  font-weight: bold;
+}
+
+.btn-active {
+  color: rgb(21, 115, 185);
+}
