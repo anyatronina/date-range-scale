@@ -3,7 +3,7 @@ import { MONTHS_FULL } from "../constants/constant";
 import { monthMarksFunc, yearMarksFunc } from "../utils/marksGenerate";
 import Slider from "@mui/material/Slider";
 
-const DateRangeScale = ({ dateValue, datePicked, onChange, value }) => {
+const DateRangeScale = ({ dateValue, onChange, value }) => {
   const [view, setView] = useState("months");
 
   const yearBegin = new Date(dateValue[0]).getFullYear();
@@ -42,7 +42,7 @@ const DateRangeScale = ({ dateValue, datePicked, onChange, value }) => {
 
   return (
     <div style={{ display: "flex" }}>
-      <div>
+      <div className="labelHide">
         <button
           className={`btn ${view === "years" && "btn-active"}`}
           onClick={handleClick}

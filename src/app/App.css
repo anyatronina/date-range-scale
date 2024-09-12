@@ -15,13 +15,6 @@ body {
   color: rgb(0 0 0) !important;
 }
 
-/* .valueLabel {
-  color: blue !important;
-  background-color: white !important;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
-  border-radius: 5px !important;
-} */
-
 .root {
   color: rgb(237 241 248) !important;
 
@@ -89,4 +82,31 @@ body {
 
 .btn-active {
   color: rgb(21, 115, 185);
+}
+
+@media screen and (max-width: 1300px) and (min-width: 800px) {
+  .markLabel {
+    transform: rotate(45deg) !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .labelHide {
+    display: none;
+  }
+
+  .markLabel {
+    opacity: 0;
+  }
+
+  .markLabel:nth-child(24n + 4) {
+    opacity: 1;
+    color: rgb(158 158 158) !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .datePiker-column {
+    display: flex;
+  }
 }
